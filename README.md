@@ -7,6 +7,11 @@ react native authentication with jwt
 ```sh
 npm install react-native-auth
 ```
+important!!
+
+```sh
+yarn add @react-native-community/async-storage
+```
 
 ## Usage
 
