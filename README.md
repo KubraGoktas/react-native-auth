@@ -7,15 +7,21 @@ react native authentication with jwt
 ```sh
 npm install react-native-auth
 ```
+dependency;
+
+```sh
+yarn add @react-native-community/async-storage
+```
 
 ## Usage
 
 ```js
-import { multiply } from "react-native-auth";
-
+import { multiply } from "react-native-auth";import { setAuthToken, storageSetItem,storageGetItem } from 'react-native-auth';
 // ...
 
-const result = await multiply(3, 7);
+setAuthToken(token)
+storageSetItem('deneme','12345')
+storageGetItem('deneme').then(res=>console.log(res))
 ```
 
 ## Contributing
