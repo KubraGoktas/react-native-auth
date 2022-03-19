@@ -29,3 +29,11 @@ export const storageGetItem = (key: string) => {
       key: key,
     })
 }
+
+export const storageRemoveItem = (key: string) => {
+   storage.remove({key})
+}
+ 
+export const storageClear = () => {
+  storage.clearMap()
+}

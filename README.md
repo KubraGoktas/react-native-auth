@@ -19,13 +19,15 @@ yarn add @react-native-community/async-storage
 
 ```js
 
-import { setAuthToken, storageSetItem,storageGetItem } from 'react-native-auth';
+import { setAuthToken, storageSetItem,storageGetItem,storageClear, storageRemoveItem} from 'react-native-auth';
 
 // ...
 
 setAuthToken(token)
 storageSetItem('deneme','12345')
 storageGetItem('deneme').then(res=>console.log(res))
+storageClear()
+storageRemoveItem('deneme')
 ```
 
 ## Contributing
